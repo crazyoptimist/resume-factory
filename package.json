@@ -1,0 +1,19 @@
+{
+  "name": "resume-factory",
+  "version": "1.0.0",
+  "description": "host your resume in just a few minutes, export to pdf file for interviews",
+  "main": "index.js",
+  "dependencies": {
+    "jsonresume-theme-hired": "^0.0.1",
+    "jsonresume-theme-kards": "^1.0.2",
+    "resume-cli": "^3.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "resume export --theme kards --format html public/index.html",
+    "export": "resume export --theme hired --format pdf resume.pdf",
+    "serve": "resume serve --theme kards"
+  },
+  "author": "crazyoptimist",
+  "license": "ISC"
+}
